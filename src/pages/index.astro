@@ -7,18 +7,12 @@ import Testimonials from '../components/Testimonials.astro';
 import CallToAction from '../components/CallToAction.astro';
 ---
 
-<Layout title="Welcome to Astrolus.">
+<Layout title="Welcome to Renu Gupta Achievers Academy.">
 	<main class="space-y-40 mb-40">
 		<HeroSection/>
 		<Features/>
 		<Stats/>
 		<Testimonials/>
 		<CallToAction/>
-      <script>
-    document.querySelectorAll('ul.nav-links li').forEach(element => element.addEventListener('click', () => {
-      document.querySelector('ul.nav-links').classList.remove('nav-active');
-   })
-   );
-  </script>
 	</main>
 </Layout>
