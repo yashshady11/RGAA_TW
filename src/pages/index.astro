@@ -14,5 +14,11 @@ import CallToAction from '../components/CallToAction.astro';
 		<Stats/>
 		<Testimonials/>
 		<CallToAction/>
+      <script>
+    document.querySelectorAll('ul.nav-links li').forEach(element => element.addEventListener('click', () => {
+      document.querySelector('ul.nav-links').classList.remove('nav-active');
+   })
+   );
+  </script>
 	</main>
 </Layout>
