@@ -9,7 +9,7 @@ import Container from "./Container.astro";
             <div class="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
                 <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" class="hidden peer">
                 <div class="relative z-20 w-full flex justify-between lg:w-max md:px-0">
-                    <a href="#home" aria-label="logo" class="flex space-x-2 items-center">
+                    <a href="/" aria-label="logo" class="flex space-x-2 items-center">
                         <div aria-hidden="true" class="flex space-x-1">
                         <img src="./images/logo/Logo_new_04.svg" class="h-6 mr-3" alt="RGAA Logo" />
                         </div>
@@ -31,6 +31,11 @@ import Container from "./Container.astro";
                    
                     <div class="text-gray-600 dark:text-gray-300 lg:pr-4 lg:w-auto w-full lg:pt-0" sm:hidden>
                         <ul class="tracking-wide font-medium lg:text-sm flex-col flex lg:flex-row gap-6 lg:gap-0" >
+                            <li>
+                                <a href="/" class="block md:px-4 transition hover:text-primary" translate-y-full>
+                                    <span>Home</span>
+                                </a>
+                            </li>
                             <li>
                                 <a href="#features" class="block md:px-4 transition hover:text-primary" translate-y-full>
                                     <span>Services</span>
