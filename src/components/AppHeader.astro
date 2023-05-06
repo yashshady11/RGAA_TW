@@ -51,6 +51,11 @@ import Container from "./Container.astro";
                                     <span>Locate Us</span>
                                 </a>
                             </li>
+                            <li>
+                                <a href="./worksheets" class="block md:px-4 transition hover:text-primary">
+                                    <span>Worksheets</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
@@ -80,4 +85,12 @@ import Container from "./Container.astro";
     {
         @apply -rotate-45 -translate-y-1
     }
+
+nav a:focus {
+  outline: none;
+}
+
+nav a:focus ~ input[type="checkbox"]:not(:checked) {
+  display: none;
+}
 </style>
